@@ -1,4 +1,4 @@
-div {
+div, p, h1 {
     width: 500px;
     background: #ff8000;
 }
