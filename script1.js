@@ -23,6 +23,7 @@ eventoUno.addEventListener("click", function(){
     document.write(c.perimetro);
 });
 
+
 var a = document.querySelector("#dos");
 a.style.color = "red"; 
 

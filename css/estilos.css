@@ -1,4 +1,23 @@
-div, p, h1 {
-    width: 500px;
-    background: #ff8000;
+body{
+  background-color: lightseagreen;
+  color: aliceblue;
 }
+
+.box-1, .box-2{
+  background-color: rgb(243, 171, 36);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size-adjust:  16px;
+  line-height: 1.2em;
+  width: 500px;
+  border-left:5px rgb(11, 45, 117) solid;
+  border-right:5px rgb(11, 45, 117)solid;
+  border-top:5px  rgb(11, 45, 117) solid;
+  border-bottom:5px  rgb(11, 45, 117)solid;
+  margin: 20px 0;
+}
+
+
+
+
+
