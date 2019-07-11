@@ -6,30 +6,43 @@
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
   </head>
+  <script type="text/javascript">
+  function sobremi(){
+    window.open("semblanza.html");
+  }
+  </script>
 
   <body>
     <!-- Parte del header-->
-    <header>
-      <!-- imagen-->
-      <div>
-        <img src="imagenes/perfil.png" width="70" alt="logotipo">
+    <header id="main-header">
+      <div  id="container">
+        <h1>Mi sitio web</h1>
       </div>
-      <div class="redes-sociales">
-        <nav>
+      <nav id="navbar">
+        <div id ="categories">
           <ul>
-            <li>
-              <div style="float: left;">
-                <img src="imagenes/twitter.png">
-              </div>
-              <div><a href="https://twitter.com/elpiinoles" id="twitter">Twitter</a></div>            
-            </li>
+            <li><a href="https://twitter.com/elpiinoles" id="twitter">Twitter</a></li>
             <li><a href="https://github.com/dogilla">Github</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#" onclick="sobremi()">Sobre mi</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </div>
+      </nav>     
+     
 
-    <section class="cuerpo">
+
+    </header>
+    <aside class="sidebar">
+      <p>BIENVENIDO</p>
+    </aside>
+
+    <section id= "showcase">
+      <h1>
+        Es un hecho establecido hace demasiado tiempo que un lector se distraerá 
+      </h1>
+    </section>
+
+    <section class="main-text">
       <div class="box-1">
         <h1>Sobre mi: </h1>
         <p> 
@@ -64,6 +77,10 @@
     <button type="button" onclick="apretar()" name="button"> Haz click aquí</button>
     <button type="button" class="tres">Boton 2</button>
     <script type="text/javascript" src="script1.js"></script>
+
+    <footer id="main-footer"> 
+      <p>Copyright 2019 Mi sitio web</p>
+    </footer>
     
 
 

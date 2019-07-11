@@ -1,23 +1,59 @@
 body{
-  background-color: lightseagreen;
-  color: aliceblue;
-}
-
-.box-1, .box-2{
-  background-color: rgb(243, 171, 36);
-  color: black;
+  background-color: #dad6d6;
+  color: #555;
   font-family: Arial, Helvetica, sans-serif;
-  font-size-adjust:  16px;
-  line-height: 1.2em;
-  width: 500px;
-  border-left:5px rgb(11, 45, 117) solid;
-  border-right:5px rgb(11, 45, 117)solid;
-  border-top:5px  rgb(11, 45, 117) solid;
-  border-bottom:5px  rgb(11, 45, 117)solid;
-  margin: 20px 0;
+  font-size: 16px;
+  margin: 0; 
 }
 
+#main-header{
+  background-color: rgb(73, 148, 23);
+  color: #fff;
+}
 
+#navbar{
+  background-color: #333;
+  color: white;
+}
 
+#navbar ul{
+  padding: 0;
+  list-style: none;
+}
+
+#navbar li{
+  display: inline;
+}
+
+#navbar a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px; 
+  padding-right: 15px;
+}
+
+#showcase {
+  background-image: url(../imagenes/ibm.jpg);
+  background-position: center right;
+  height: 300px;
+  text-align: center;
+}
+
+#showcase h1 {
+  background-color: black;
+  color: white;
+}
+
+#container h1{
+  color: white;
+}
+
+#main-footer{
+  background: black;
+  color: white; 
+  text-align: center;
+  margin-top: 30px;
+  padding: 5px;
+}
 
 
