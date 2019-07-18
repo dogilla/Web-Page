@@ -6,6 +6,9 @@
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
   </head>
+  <!--Tensorflow-->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+
   <script type="text/javascript">
   function sobremi(){
     window.open("semblanza.html");
@@ -43,7 +46,7 @@
     </section>
 
     <section class="main-text">
-      <div class="box-1">
+      <div id="box-1">
         <h1>Sobre mi: </h1>
         <p> 
           Es un hecho establecido hace demasiado tiempo que un lector se distraerá 
@@ -57,7 +60,7 @@
           Muchas versiones han evolucionado a través de los años, algunas veces por accidente, 
           otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).</p>
       </div>
-      <div class="box-2">
+      <div id="box-2">
         <h1>Curriculum Vitae</h1>
         <p>
           Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
@@ -74,9 +77,26 @@
     </section>
 
 
-    <button type="button" onclick="apretar()" name="button"> Haz click aquí</button>
+    <button type="button" onclick="apretar()" name="button"> Boton 1</button>
     <button type="button" class="tres">Boton 2</button>
+    <button type="button" id="button3" onclick="learnlineal()">Boton 3</button>
     <script type="text/javascript" src="script1.js"></script>
+    <script type="text/javascript">
+      async function learnlineal(){
+        const model = tf.sequential();
+        model.add(tf.layer.dense({units:1,inputShape:[1]}));
+        model.compile({
+          loss: 'meanSquareError',
+          optimizer: 'sgd'
+        });
+        const xs = tf.tensor2d([-1,0,1,2,3,4], [6,1]);
+        const ys = tf.tensor2d([-3,-1,1,4,5,7], [6,1]);
+  
+        await model.fit(xs,ys,{epochs: 250});
+        document.getElementById('output field').innerText =
+        model.predict(tf.tensor2d([20], [1,1]));
+      }
+      </script>
 
     <footer id="main-footer"> 
       <p>Copyright 2019 Mi sitio web</p>
