@@ -62,4 +62,20 @@ body{
   padding: 10px 10px 20px 20px;
 }
 
+.box-3 {
+  width:  40%;
+  background-size: 30%;
+  border-top-width: 20px;
+  background: white;
+  border-radius: 10px; 
+}
+
+
+.subox:first-child{
+  background: rgb(29, 233, 223);
+
+  h1{
+    color: white;
+  }
+}
 
