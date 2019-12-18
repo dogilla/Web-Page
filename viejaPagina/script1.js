@@ -1,6 +1,10 @@
 function apretar(){
     alert("hola 1");
-}; 
+};
+
+function gameOne(){
+    window.open("gameOne.html");
+}
 
 class circulo {
     constructor(area, perimetro){

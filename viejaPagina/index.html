@@ -1,3 +1,4 @@
+<!--Archivo principal html-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,13 +6,9 @@
     <title>Mario UwU</title>
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- Carga de la biblioteca de tensorflow-->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
   </head>
-  <script type="text/javascript">
-  function sobremi(){
-    window.open("semblanza.html");
-  }
-  </script>
 
   <body>
     <!-- Parte del header-->
@@ -25,7 +22,7 @@
             <li><a href="https://twitter.com/elpiinoles" id="twitter">Twitter</a></li>
             <li><a href="https://github.com/dogilla">Github</a></li>
             <li><a href="#">Contacto</a></li>
-            <li><a href="#" onclick="sobremi()">Sobre mi</a></li>
+            <li><a href="#">Sobre mi</a></li>
           </ul>
         </div>
       </nav>     
@@ -76,6 +73,7 @@
 
     <button type="button" onclick="apretar()" name="button"> Boton 1</button>
     <button type="button" class="tres">Boton 2</button>
+    <button type="button" onclick="gameOne()">Juego 1</button>
     <script type="text/javascript" src="script1.js"></script>
 
     <footer id="main-footer"> 
