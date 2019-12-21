@@ -1,0 +1,73 @@
+body{
+  background-color: #dad6d6;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0; 
+}
+
+#main-header{
+  background-color: rgb(73, 148, 23);
+  color: #fff;
+}
+
+#navbar{
+  background-color: #333;
+  color: white;
+}
+
+#navbar ul{
+  padding: 0;
+  list-style: none;
+}
+
+#navbar li{
+  display: inline;
+}
+
+#navbar a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px; 
+  padding-right: 15px;
+}
+
+#showcase {
+  background-image: url(../imagenes/ibm.jpg);
+  background-position: center right;
+  height: 300px;
+  text-align: center;
+}
+
+#showcase h1 {
+  background-color: black;
+  color: white;
+}
+
+#container h1{
+  color: white;
+}
+
+#main-footer{
+  background: black;
+  color: white; 
+  text-align: center;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+
+#box-1, #box-2 {
+  float: left;
+  padding: 10px 10px 20px 20px;
+}
+
+.box-3 {
+  width:  40%;
+  background-size: 30%;
+  border-top-width: 20px;
+  background: white;
+  border-radius: 10px; 
+}
+
+
